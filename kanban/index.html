@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>kanban</title>
+</head>
+<body>
+    <header>
+        <img src="kanban.png" alt="">
+        <h1>kanban board</h1>
+    </header>
+    <div class="container">
+        <div class="boxes">
+            <div class="box toDo">
+                <div class="head">
+                    <h3>to do</h3>
+                    <span>0</span>
+                </div>
+                <div class="tasks">
+                    <!-- <div class="task">
+                        <div class="title">
+                            <h3>title</h3>
+                            <div class="icons">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="the-task">the task </div>
+                    </div> -->
+                    <div class="footer">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Task</span>
+                    </div>
+                    <div class="add">
+                        <input type="text" name="" id="" class="title" placeholder="Task Title">
+                        <textarea name="" id="" class="content" placeholder="Task Description"></textarea>
+                        <div class="btns">
+                            <button class="cancel">cancel</button>
+                            <button class="done-btn">add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box inProgress">
+                <div class="head">
+                    <h3>in progress</h3>
+                    <span>0</span>
+                </div>
+                <div class="tasks">
+                    <!-- <div class="edit">
+                        <input type="text" name="" id="" class = "title">
+                        <textarea name="" id="" class="content"></textarea>
+                        <div class="btns">
+                            <i class="fa-solid fa-x"></i>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div> -->
+                    <div class="footer">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Task</span>
+                    </div>
+                    <div class="add">
+                        <input type="text" name="" id="" class="title" placeholder="Task Title">
+                        <textarea name="" id="" class="content" placeholder="Task Description"></textarea>
+                        <div class="btns">
+                            <button class="cancel">cancel</button>
+                            <button class="done-btn">add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box done">
+                <div class="head">
+                    <h3>done</h3>
+                    <span>0</span>
+                </div>
+                <div class="tasks">
+                    <div class="footer">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Task</span>
+                    </div>
+                    <div class="add">
+                        <input type="text" name="" id="" class="title" placeholder="Task Title">
+                        <textarea name="" id="" class="content" placeholder="Task Description"></textarea>
+                        <div class="btns">
+                            <button class="cancel">cancel</button>
+                            <button class="done-btn">add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

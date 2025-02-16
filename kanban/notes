@@ -1,0 +1,10 @@
+Build a **Kanban Task Management Board**! 🚀  
+
+### Features:  
+✅ Drag and drop tasks between columns (To Do, In Progress, Done).  
+✅ Local storage to save tasks persistently.  
+✅ Editable task titles and descriptions.  
+✅ Add and delete tasks dynamically.  
+✅ Smooth animations for a polished UI.  
+
+This will boost your JavaScript skills with DOM manipulation, event handling, local storage, and even touch-based interactions for mobile! 💪
