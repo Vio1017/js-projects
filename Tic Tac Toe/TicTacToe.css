@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.634);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-content{
+    text-align: center;
+}
+.overlay-content button{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.overlay-content .players-btns{
+    /* display: none; */
+}
+.overlay-content .players-btns button{
+    margin: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+.overlay-content .players-btns button.one{
+    background-color: rgb(69, 69, 250);
+}
+.overlay-content .players-btns button.two{
+    background-color: rgb(250, 162, 69);
+}
+.overlay-content .one-player-btns{
+    display: none;
+}
+.overlay-content .one-player-btns span{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+.overlay-content .one-player-btns button{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.overlay-content .one-player-btns button.x{
+    background-color: rgb(250, 162, 69) ;
+}
+.overlay-content .one-player-btns button.o{
+    background-color: rgb(69, 69, 250);
+}
+.overlay-content .two-player-btns{
+    display: none;
+}
+.overlay-content .two-player-btns label{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.overlay-content .two-player-btns input{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0px 0 10px;
+}
+.overlay-content input[type = "submit"]{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 0px 10px 10px 0;
+
+}
+.overlay-content .two-player-btns .submitted{
+    background-color: #979797;
+}
+.overlay-content .two-player-btns span{
+    font-size: 35px;
+    margin: 0 10px;
+}
+.overlay-content .two-player-btns div{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overlay-content .two-player-btns .player-one span{
+    color: rgb(250, 162, 69) ;
+}
+.overlay-content .two-player-btns .player-two span{
+    color: rgb(69, 69, 250) ;
+}
+
+h1{
+    background-color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.the-game{
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.the-game div{
+    border: solid black 2px;
+    cursor: pointer;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.player-info{
+    display: flex;
+    align-items: center;
+}
+.player-info span{
+    margin-left: 20px;
+}
+.info{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.info .players-scores{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.info .players-scores div div{
+    font-weight: bold;
+}
+button{
+    transition: 0.3s;
+}
+button:hover{
+    scale: 1.2;
+}
+
+.go{
+    background-color: rgb(33, 188, 30);
+    width: 70px;
+    height: 50px;
+    margin-top: 20px;
+    display: none;
+}
+
+@media screen and (max-width:520px){
+    .overlay .overlay-content  .two-player-btns label{
+        font-size: 20px;
+    }
+    .overlay .overlay-content  .two-player-btns span{
+        font-size: 24px;
+    }
+    .overlay .overlay-content  .two-player-btns input{
+        font-size: 12px;
+    }
+}

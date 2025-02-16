@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TicTacToe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="overlay-content">
+            <div class="players-btns">
+                <button class="one">one player</button>
+                <button class="two">two players</button>
+            </div>
+            <div class="one-player-btns">
+                <span>you:</span>
+                <button class="x">x</button>
+                <button class="o">o</button>
+            </div>
+            <div class="two-player-btns">
+                <div class="player-one">
+                    <label for="one" class="one">player 1 <span>x</span></label>
+                    <input type="text" name="" id="one" class="input-one" placeholder="enter player 1 name" required>
+                    <input type="submit" class="submit1" name="" id="">
+                </div>
+                <div class="player-two">
+                    <label for="two" class="two">player 2 <span>o</span></label>
+                    <input type="text" name="" id="two" class="input-two" placeholder="enter player 2 name" required>
+                    <input type="submit" class="submit2" name="" id="">
+                </div>
+            </div>
+            
+            <button class="go">go</button>
+        </div>
+    </div>
+    <h1>Tic Tac Toe</h1>
+    <div class="game-container">
+        <div class="the-game">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
+            <div class="square5"></div>
+            <div class="square6"></div>
+            <div class="square7"></div>
+            <div class="square8"></div>
+            <div class="square9"></div>
+        </div>
+        <div class="info">
+            <div class="result"></div>
+            <div class="players-scores">
+                <div class="player1">
+                    <div class="player-info">
+                        <p> </p><span></span>
+                    </div>
+                    <div class="player1-score"></div>
+                </div>
+                <div class="player2">
+                    <div class="player-info">
+                        <p> </p><span></span>
+                    </div>
+                    <div class="player2-score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="TicTacToe.js"></script>
+</body>
+</html>
