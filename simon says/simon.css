@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: white;
+    margin: 0%;
+    padding: 20px;
+}
+.the-game{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.the-game .circle{
+    width: 320px;
+    height: 320px;
+    border: solid 10px rgb(45, 45, 45);
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(45, 45, 45);
+}
+.the-game .circle div{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px black ;
+    filter: brightness(0.6);
+}
+.the-game .circle div.green{
+    background-color: green;
+}
+.the-game .circle div.red{
+    background-color: red;
+}
+.the-game .circle div.blue{
+    background-color: blue;
+}
+.the-game .circle div.yellow{
+    background-color: yellow;
+}
+.score{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
