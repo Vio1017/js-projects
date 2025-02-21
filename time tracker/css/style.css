@@ -1,0 +1,154 @@
+:root {
+        --l1: #F9F7F7;
+        --l2:#DBE2EF;
+        --l3:#3F72AF;
+        --l4:#112D4E;
+
+        --d1: #222831;
+        --d2:#31363F;
+        --d3:#76ABAE;
+        --d4:#EEEEEE;
+}
+
+html{
+        scroll-behavior: smooth;
+}
+
+body {
+        font-family: "Cairo", sans-serif;
+        background-color: var(--l2);
+        color: var(--l4);
+        transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 0;
+}
+
+* {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+}
+
+header{
+        background-color: var(--l1);
+        padding: 0 20px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+header .btns div{
+        cursor: pointer;
+        margin-left: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.3s;
+}
+/* header .btns div i{
+        display: inline;
+} */
+header .btns div:hover{
+        background-color: var(--l3);
+        color: var(--l1);
+}
+.app{
+        background-color: var(--l1);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+}
+.app .timer{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 24px;
+}
+.app .time{
+        font-size: 100px;
+        margin-bottom: 20px;
+}
+.app .timer .btns{
+        margin: 20px 0;
+}
+.app .timer .btns button{
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        padding:  10px 15px;
+        text-transform: capitalize;
+        transition: 0.3s;
+}
+.app .timer .btns button:hover{
+        filter:brightness(0.9);
+}
+.app .timer .btns .start{
+        background-color: var(--l3);
+        color: var(--l1);
+}
+.app .timer .btns .reset{
+        background-color: var(--l2);
+        color: var(--l4);
+}
+
+.app .timer .btns button i{
+        margin-right: 10px;
+}
+.app .settings {
+        text-transform: capitalize;
+        font-size: 24px;
+        padding: 30px 0;
+}
+
+.app .settings input{
+        background-color: transparent;
+        color: var(--l4);
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid var(--l4);
+        display: block;
+        margin: 10px 0 30px 0; 
+        padding: 10px;
+}
+.app .settings input:focus{
+        outline: solid 1px var(--l3);
+}
+.app .settings .stats{
+        text-align: center;
+}
+.app .settings .stats span{
+        font-weight: bold;
+}
+@media screen and (max-width:400px) {
+        .app .settings input{
+                width: 270px;
+        }
+        header .btns {
+                display: flex;
+                
+        }
+        header h1 {
+                font-size: 27px;
+        }
+}
+/* .show{
+        display: inline;
+}
+.hide{
+        display: none;
+} */
+button.start i,
+button.start span {
+        pointer-events: none;
+}

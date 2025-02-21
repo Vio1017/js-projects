@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+        <div class="btns">
+            <div class="mood fa-regular fa-moon">
+                <!-- <i class="mood fa-regular fa-moon"></i> -->
+                <!-- <i class="light fa-regular fa-sun"></i> -->
+            </div>
+            <div class="sound fa-solid fa-volume-high">
+                <!-- <i class="on fa-solid fa-volume-high"></i> -->
+                <!-- <i class="off fa-solid fa-volume-xmark"></i> -->
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="app">
+            <div class="timer">
+                <div class="time"></div>
+                <span class="session"></span>
+                <div class="btns">
+                    <button type="button" class="start"><i class="fa-solid fa-play"></i><span>start</span></button>
+                    <button type="button" class="reset"><i class="fa-solid fa-reply"></i><span>reset</span></button>
+                </div>
+            </div>
+            <div class="settings">
+                <form action="">
+                    <label for="work">work duration</label>
+                    <input type="number" name="" id="work" class="work"  min="5" max="60">
+                    <label for="break">break duration</label>
+                    <input type="number" name="" id="break" class="break" min="5" max="60">
+                </form>
+                <div class="stats">
+                    Completed  sessions : <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="timer.js"></script>
+</body>
+</html>
