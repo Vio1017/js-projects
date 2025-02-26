@@ -1,0 +1,182 @@
+:root {
+    --main-color: #6727F2;
+    --secondary-color:#ffffff;
+    --trans-color:#eeeeee64;
+    --color3:#eee;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: "Cairo", sans-serif;
+    color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    filter: opacity(0.5);
+}
+
+
+.the-app img{
+    /* right: 0px;
+    bottom: 0;
+    filter: brightness(0.5);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; */
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 100;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app-container{
+    width: 100%;
+    height: fit-content;
+    border-radius: 8px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.locations{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.locations input{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--trans-color);
+    padding: 5px;
+    border-radius: 8px;
+    border: solid 1px;
+    width: 250px;
+}
+.locations input:focus{
+    outline: solid 1px var(--secondary-color);
+}
+.locations input::placeholder{
+    color: var(--secondary-color);
+}
+.locations button{
+    color: var(--secondary-color);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.locations form{
+    position: relative;
+}
+.locations button.search{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+}
+.locations button.access{
+    border: 1px solid var(--secondary-color);
+    background-color: var(--trans-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.locations button.access:hover{
+    filter: brightness(0.8);
+}
+.weather{
+    width: 50%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.weather .cityName{
+    font-size: 55px;
+    text-transform: capitalize;
+}
+.the-weather .degree{
+    font-size: 70px;
+} 
+.the-weather .condition{
+    font-size: 25px;
+    margin-top: 5px;
+} 
+.info{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin:40px auto 0 auto;
+    text-align: center;
+}
+.info>div{
+    margin: 2px;
+    /* width: 150px; */
+    height: 80px;
+    padding: 0 10px  0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--trans-color);
+    display: flex;
+    align-items: center;
+}
+.info .type{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.info i{
+    font-size: 30px;
+}
+
+@media screen and (max-width : 830px) {
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top:40px;
+        text-align: center;
+    
+    }
+    .weather{
+        width: 80%;
+    }
+    .weather .cityName{
+        font-size: 40px;
+    }
+    .the-weather .degree{
+        font-size: 50px;
+    } 
+}

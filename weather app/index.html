@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>weather app</title>
+</head>
+<body>
+    <div class="the-app">
+        <!-- <img class="bg" src="images\cloudy.png" alt=""> -->
+        <div class="container">
+            <div class="app-container">
+                <div class="locations">
+                    <form action="" class="searchCity">
+                        <input type="text" placeholder="Search City">
+                        <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <button class="access"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="weather">
+                    <div class="the-weather">
+                        <div class="degree"><span>19</span>°C</div>
+                        <div class="condition">
+                            <i class="fa-solid fa-cloud"></i>
+                            <span>cloudy</span>
+                        </div>
+                    </div>
+                    <div class="cityName">giza</div>
+                </div>
+                <div class="info">
+                    <div class="lookLike">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <div class="type">
+                            <span>Feels Like</span>
+                            <span><span class="degree"></span><span> °C</span></span>
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="type">
+                            <span>Humidity</span>
+                            <span><span class="degree"></span><span>%</span></span>
+                        </div>
+                    </div>
+                    <div class="speed">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="type">
+                            <span>Wind Speed</span>
+                            <span><span class="degree"></span><span> m/s</span></span>
+                        </div>
+                    </div>
+                    <div class="pressure">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <div class="type">
+                            <span>Pressure</span>
+                            <span><span class="degree"></span><span> hPa</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
