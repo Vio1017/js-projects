@@ -1,0 +1,205 @@
+:root {
+    --color1:#910A67;
+    --color2:#720455;
+    --color3:#3C0753;
+    --color4:#030637;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Scrollbar Track (background) */
+::-webkit-scrollbar {
+    width: 12px;  /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color1); /* Change to any color */
+    border-radius: 5px; /* Rounded corners */
+    border-radius: 2px;
+}
+
+/* Scrollbar Track (Behind the handle) */
+::-webkit-scrollbar-track {
+    background-color: var(--color3); /* Background color */
+}
+
+/* On Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color2);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, var(--color4), var(--color3));
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.stars{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.container{
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-planet ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    transition: 0.3s;
+    position: relative;
+}
+.choose-planet ul:hover li a{
+    opacity: 0;
+}
+.choose-planet ul li{
+    margin: 30px 0;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.choose-planet ul li a{
+    text-decoration: none;
+    background-color: var(--color1);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1000;
+}
+.choose-planet ul li a:hover{
+    background-color: var(--color3);
+    opacity: 1;
+    font-size: 30px;
+}
+.choose-planet ul li::after{
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    letter-spacing: 10px;
+    text-shadow: rgba(255, 255, 255, 0.489) 0px 0px 10px;
+} 
+.choose-planet ul li:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+} 
+
+.choose-planet ul li img{
+    opacity: 0;
+    transition: 0.3s;
+}
+.choose-planet ul li:hover img{
+    opacity: 0.5;
+}
+.choose-planet ul li img{
+    width: 200px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.image img{
+    width: 300px;
+    mix-blend-mode: screen;
+}
+.planet-info{
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.118);
+    border-top: none;
+    width: 100%;
+    margin: 20px 0;
+}
+.planet-info .title{
+    background-image: linear-gradient(to right, var(--color2), var(--color3), var(--color4));
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
+.planet-info .info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.planet-info .image{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #03063748;
+    /* min-height: 80vh; */
+    min-width: 300px;
+}
+.planet-info .facts{
+    min-width: 300px;
+    padding:0px 20px;
+    flex: 1;
+    background-color: #0306378a;
+    color: white;
+    text-transform: capitalize;
+}
+.planet-info .facts div:not(:last-child){
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.118);
+    color: #4163ec;
+    font-weight: bold;
+}
+.planet-info .facts div:not(:last-child){
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.118);
+    color: #4163ec;
+    font-weight: bold;
+}
+.planet-info .facts div:last-child{
+    margin: 20px 0px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.118);
+    color: #4163ec;
+    font-weight: bold;
+    background-color: #3c075393;
+    border-radius: 10px;
+    border: none;
+    border-left: 5px solid #682087;
+
+}
+
+.planet-info .facts div span{
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
