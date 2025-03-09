@@ -10,6 +10,7 @@ html{
 }
 
 body {
+    background-image: url("../images/cloudy.png");
     position: relative;
     font-family: "Cairo", sans-serif;
     color: var(--secondary-color);
