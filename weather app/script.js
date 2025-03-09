@@ -75,37 +75,37 @@ function updateWeather(data){
     let weather = data.weather[0].main.toLowerCase();
     let description = data.weather[0].description;
     if(weather.includes("clear")){
-        document.querySelector("body").style.backgroundImage = `url('../images/sunny.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/sunny.jpg')`;
         condition.textContent = description;
         icon.className = "fa-regular fa-sun";
     }
     else if(weather.includes("cloud")){
-        document.querySelector("body").style.backgroundImage = `url('../images/cloudy.png')`;
+        document.querySelector("body").style.backgroundImage = `url('images/cloudy.png')`;
         condition.textContent = description;
         icon.className = "fa-solid fa-cloud";
     }
     else if(weather.includes("rain")){
-        document.querySelector("body").style.backgroundImage = `url('../images/rainy.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/rainy.jpg')`;
         condition.textContent=description;
         icon.className = "fa-solid fa-cloud-rain";
     }
     else if(weather.includes("wind")){
-        document.querySelector("body").style.backgroundImage = `url('../images/windy.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/windy.jpg')`;
         condition.textContent = description;
         icon.className = "fa-solid fa-wind";
     }
     else if(weather.includes("fog")){
-        document.querySelector("body").style.backgroundImage = `url('../images/foggy.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/foggy.jpg')`;
         condition.textContent = description;
         icon.className = "fa-solid fa-smog";
     }
     else if(weather.includes("storm")){
-        document.querySelector("body").style.backgroundImage = `url('../images/storm.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/storm.jpg')`;
         condition.textContent=description;
         icon.className = "fa-solid fa-poo-storm";
     }
     else if(weather.includes("snow")){
-        document.querySelector("body").style.backgroundImage = `url('../images/snowy.jpg')`;
+        document.querySelector("body").style.backgroundImage = `url('images/snowy.jpg')`;
         condition.textContent = description;
         icon.className = "fa-solid fa-snowflake";
     }
